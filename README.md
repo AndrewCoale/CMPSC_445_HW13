@@ -60,3 +60,8 @@ Classification Report:
     weighted avg   0.95      0.95      0.95       588  
 
 
+# Preprocessing Discussion:
+The preprocessing here was nothing too special, I just renamed the life expectancy column (the space annoyed me), filled in missing columns, encoded the status column, standardized features, and made the life expectancy categorical, in 3 bins. This last one is because we needed to test classifiers, when life expectancy was a continuous value.
+
+# Setting up Classifiers & Results:
+The classifiers were very simple to use, the process was similar enough that I could declare all of them and loop through the same fitting/evaluation process. They happened to end up in order of accuracy, with logistic regression the worst performing, at 84%, and XGB the best, approaching 95%. 
